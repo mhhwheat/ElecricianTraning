@@ -1,7 +1,5 @@
 package com.wheat.mobile.electriciantraning;
 
-import android.app.Activity;
-import android.graphics.Point;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,7 +10,6 @@ import android.webkit.WebView;
 import com.taobao.weex.IWXRenderListener;
 import com.taobao.weex.WXSDKInstance;
 import com.taobao.weex.common.WXRenderStrategy;
-import com.taobao.weex.ui.view.WXWebView;
 import com.taobao.weex.utils.WXFileUtils;
 
 import java.util.HashMap;
