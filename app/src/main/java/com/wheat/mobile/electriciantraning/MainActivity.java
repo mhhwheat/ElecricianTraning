@@ -64,28 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 "MainActivity",
                 WXFileUtils.loadAsset("tech_list.js",this),
                 new HashMap<String, Object>(),
-                null,getDisplayWidth(MainActivity.this),getDisplayHeight(MainActivity.this)/2,
+                null,-1,-1,
                 WXRenderStrategy.APPEND_ASYNC);
-    }
-
-    private int getDisplayWidth(Activity activity){
-        int width=0;
-        if(activity!=null&&activity.getWindowManager()!=null&&activity.getWindowManager().getDefaultDisplay()!=null){
-            Point point=new Point();
-            activity.getWindowManager().getDefaultDisplay().getSize(point);
-            width=point.x;
-        }
-        return width;
-    }
-
-    private int getDisplayHeight(Activity activity){
-        int height = 0;
-        if (activity != null && activity.getWindowManager() != null && activity.getWindowManager().getDefaultDisplay() != null) {
-            Point point=new Point();
-            activity.getWindowManager().getDefaultDisplay().getSize(point);
-            height=point.y;
-        }
-
-        return height;
     }
 }
